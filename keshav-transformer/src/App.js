@@ -151,6 +151,7 @@ class App extends Component{
         />
       <p>{this.state.trans}</p>
       <Button variant="outlined" onClick={this.onClick}>Copy<ContentCopyIcon/></Button> 
+      <h5><footer className="footer-1"><a href="https://github.com/ad1tyat/keshav-transformer">Source Code</a> || Made by <a href="https://github.com/ad1tyat/">Aditya Trivedi</a></footer></h5>
     </div>
     );
   }
