@@ -1,14 +1,18 @@
 import TextField from '@mui/material/TextField';
 import { Component } from 'react';
 import './App.css'
-
+import song from "./static/ahk.ogg";
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import Button from '@mui/material/Button';
 
 class App extends Component{
   constructor(props) {
 		super(props);  
     this.state = {
       txt: '',
-      trans:''
+      trans:'',
+      isPlaying:false,
+      audio : new Audio(song)
     };
   }
   insert = (arr, index, newItem) => {
@@ -42,6 +46,7 @@ class App extends Component{
   }
 
   handleChange = (e) => {
+
     console.log(e.target.value)
     this.setState({ 
       txt: e.target.value
@@ -111,7 +116,23 @@ class App extends Component{
     }
     this.setState({ trans : ntmp });
   } 
-	 
+	onClick = () => {
+
+    navigator.clipboard.writeText(this.state.trans)
+
+    // Get state of song
+    let isPlaying = this.state.isPlaying;
+
+    if (isPlaying) {
+    } else {
+
+      // Play the song if it is paused
+      this.state.audio.play();
+    }
+
+    // Change the state of song
+    this.setState({ isPlaying: !isPlaying });
+  }
   render(){
     
     return(
@@ -120,6 +141,7 @@ class App extends Component{
       </header>
       <h1> Keshav Transformer </h1>
       <p> Enter any text and get the transformed version in Keshav style ! </p>
+      <p>[Keep Audio On : 🔊]</p>
       <TextField
           id="outlined-multiline-flexible"
           label="Enter Text Here"
@@ -128,7 +150,7 @@ class App extends Component{
           onChange={this.handleChange}
         />
       <p>{this.state.trans}</p>
-      <button onClick={() => {navigator.clipboard.writeText(this.state.trans)}}>Copy</button> 
+      <Button variant="outlined" onClick={this.onClick}>Copy<ContentCopyIcon/></Button> 
     </div>
     );
   }
