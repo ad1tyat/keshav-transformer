@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/keshav-transformer/static/css/main.22e6cfdc.chunk.css",
-    "main.js": "/keshav-transformer/static/js/main.cc79c28a.chunk.js",
-    "main.js.map": "/keshav-transformer/static/js/main.cc79c28a.chunk.js.map",
+    "main.css": "/keshav-transformer/static/css/main.6d72a6bd.chunk.css",
+    "main.js": "/keshav-transformer/static/js/main.30209792.chunk.js",
+    "main.js.map": "/keshav-transformer/static/js/main.30209792.chunk.js.map",
     "runtime-main.js": "/keshav-transformer/static/js/runtime-main.8c3c1e17.js",
     "runtime-main.js.map": "/keshav-transformer/static/js/runtime-main.8c3c1e17.js.map",
     "static/js/2.553b17d9.chunk.js": "/keshav-transformer/static/js/2.553b17d9.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.5448d57c.chunk.js": "/keshav-transformer/static/js/3.5448d57c.chunk.js",
     "static/js/3.5448d57c.chunk.js.map": "/keshav-transformer/static/js/3.5448d57c.chunk.js.map",
     "index.html": "/keshav-transformer/index.html",
-    "static/css/main.22e6cfdc.chunk.css.map": "/keshav-transformer/static/css/main.22e6cfdc.chunk.css.map",
+    "static/css/main.6d72a6bd.chunk.css.map": "/keshav-transformer/static/css/main.6d72a6bd.chunk.css.map",
     "static/js/2.553b17d9.chunk.js.LICENSE.txt": "/keshav-transformer/static/js/2.553b17d9.chunk.js.LICENSE.txt",
     "static/media/ahk.f4ff6619.ogg": "/keshav-transformer/static/media/ahk.f4ff6619.ogg"
   },
   "entrypoints": [
     "static/js/runtime-main.8c3c1e17.js",
     "static/js/2.553b17d9.chunk.js",
-    "static/css/main.22e6cfdc.chunk.css",
-    "static/js/main.cc79c28a.chunk.js"
+    "static/css/main.6d72a6bd.chunk.css",
+    "static/js/main.30209792.chunk.js"
   ]
 }
